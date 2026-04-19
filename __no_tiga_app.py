@@ -83,10 +83,7 @@ def main():
     st.markdown("### Prediction Results")
     res_col1, res_col2 = st.columns(2)
     
-    try:
-        container_kwargs = {"border": True}
-    except TypeError:
-        container_kwargs = {}
+    container_kwargs = {"border": True}
         
     with res_col1:
         with st.container(**container_kwargs):
